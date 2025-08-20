@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "YOUR_MONGODB_OBJECT_ID"
+  },
+  "currency": {
+    "name": "USD",
+    "symbol": "$",
+    "countryCode": "USA",
+    "currencyCode": "USD",
+    "isDefault": true
+  },
+  "android": {
+    "google": {
+      "interstitial": "YOUR_ANDROID_INTERSTITIAL_ID",
+      "native": "YOUR_ANDROID_NATIVE_ID",
+      "reward": "YOUR_ANDROID_REWARD_ID"
+    }
+  },
+  "ios": {
+    "google": {
+      "interstitial": "YOUR_IOS_INTERSTITIAL_ID",
+      "native": "YOUR_IOS_NATIVE_ID",
+      "reward": "YOUR_IOS_REWARD_ID"
+    }
+  },
+  "googlePlaySwitch": true,
+  "stripeSwitch": true,
+  "stripePublishableKey": "YOUR_STRIPE_PUBLISHABLE_KEY",
+  "stripeSecretKey": "YOUR_STRIPE_SECRET_KEY",
+  "razorPaySwitch": true,
+  "razorPayId": "YOUR_RAZORPAY_ID",
+  "razorSecretKey": "YOUR_RAZORPAY_SECRET_KEY",
+  "flutterWaveId": "YOUR_FLUTTERWAVE_ID",
+  "flutterWaveSwitch": true,
+  "privacyPolicyLink": "YOUR_PRIVACY_POLICY_LINK",
+  "termsOfUsePolicyLink": "YOUR_TERMS_OF_USE_LINK",
+  "durationOfShorts": 180,
+  "minCoinForCashOut": 0,
+  "minWithdrawalRequestedCoin": 0,
+  "referralRewardCoins": 40,
+  "watchingVideoRewardCoins": 100,
+  "commentingRewardCoins": 100,
+  "likeVideoRewardCoins": 100,
+  "loginRewardCoins": 5000,
+  "maxAdPerDay": 6,
+  "isGoogle": false,
+  "privateKey": {
+    "type": "service_account",
+    "project_id": "YOUR_FIREBASE_PROJECT_ID",
+    "private_key_id": "YOUR_PRIVATE_KEY_ID",
+    "private_key": "YOUR_FIREBASE_PRIVATE_KEY",
+    "client_email": "YOUR_FIREBASE_CLIENT_EMAIL",
+    "client_id": "YOUR_FIREBASE_CLIENT_ID",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "YOUR_FIREBASE_CLIENT_CERT_URL",
+    "universe_domain": "googleapis.com"
+  },
+  "createdAt": {
+    "$date": "2024-10-21T11:47:03.908Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-05T06:35:01.237Z"
+  },
+  "freeEpisodesForNonVip": 2,
+  "storage": {
+    "awsS3": false,
+    "digitalOcean": false,
+    "local": true
+  },
+  "contactEmail": "support@example.com",
+  "resendApiKey": "YOUR_RESEND_API_KEY",
+  "awsAccessKey": "YOUR_AWS_ACCESS_KEY",
+  "awsBucketName": "YOUR_AWS_BUCKET_NAME",
+  "awsEndpoint": "https://s3.region.amazonaws.com",
+  "awsHostname": "https://bucket-name.s3.region.amazonaws.com",
+  "awsRegion": "YOUR_AWS_REGION",
+  "awsSecretKey": "YOUR_AWS_SECRET_KEY",
+  "doAccessKey": "YOUR_DIGITALOCEAN_ACCESS_KEY",
+  "doBucketName": "YOUR_DIGITALOCEAN_BUCKET_NAME",
+  "doEndpoint": "https://doBucketName.region.digitaloceanspaces.com",
+  "doHostname": "https://region.digitaloceanspaces.com",
+  "doRegion": "YOUR_DIGITALOCEAN_REGION",
+  "doSecretKey": "YOUR_DIGITALOCEAN_SECRET_KEY"
+}]
