@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "6719e7925afd52a927119f4b"
+  },
+  "day": 2,
+  "dailyRewardCoin": 20,
+  "createdAt": {
+    "$date": "2024-10-24T06:22:10.535Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-24T06:22:10.535Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6719e79e5afd52a927119f4e"
+  },
+  "day": 3,
+  "dailyRewardCoin": 30,
+  "createdAt": {
+    "$date": "2024-10-24T06:22:22.005Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-24T06:22:22.005Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6719e7b45afd52a927119f52"
+  },
+  "day": 4,
+  "dailyRewardCoin": 40,
+  "createdAt": {
+    "$date": "2024-10-24T06:22:44.578Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T14:10:30.608Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6719e7bd5afd52a927119f55"
+  },
+  "day": 5,
+  "dailyRewardCoin": 50,
+  "createdAt": {
+    "$date": "2024-10-24T06:22:53.827Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T14:10:40.216Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6719e7ca5afd52a927119f58"
+  },
+  "day": 6,
+  "dailyRewardCoin": 60,
+  "createdAt": {
+    "$date": "2024-10-24T06:23:06.490Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T14:10:53.688Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67333155e551dd6723f4c722"
+  },
+  "day": 7,
+  "dailyRewardCoin": 70,
+  "createdAt": {
+    "$date": "2024-11-12T10:43:33.267Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T14:11:17.092Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67972bc32865cafb3ce4676f"
+  },
+  "day": 1,
+  "dailyRewardCoin": 10,
+  "createdAt": {
+    "$date": "2025-01-27T06:46:27.157Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-27T06:46:27.157Z"
+  }
+}]

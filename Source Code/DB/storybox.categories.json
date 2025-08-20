@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "67c7f17fad98208ec5fae3c0"
+  },
+  "name": "love",
+  "uniqueId": "#CAT331781",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-03-05T06:38:55.283Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T06:38:55.283Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7f187ad98208ec5fae3c8"
+  },
+  "name": "crime",
+  "uniqueId": "#CAT687185",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-03-05T06:39:03.506Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T06:39:03.506Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7f196ad98208ec5fae3d0"
+  },
+  "name": "Suspense",
+  "uniqueId": "#CAT431152",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-03-05T06:39:19.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-07T16:35:46.327Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c8142971c7fba9d9739ae5"
+  },
+  "name": "mystery",
+  "uniqueId": "#CAT349951",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2025-03-05T09:06:49.066Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T09:06:49.066Z"
+  }
+}]

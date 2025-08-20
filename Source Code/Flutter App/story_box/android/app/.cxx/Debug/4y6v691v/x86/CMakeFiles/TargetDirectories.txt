@@ -1,0 +1,2 @@
+/Users/namrasheta/Documents/namra_project/mein_projects/story_box/android/app/.cxx/Debug/4y6v691v/x86/CMakeFiles/edit_cache.dir
+/Users/namrasheta/Documents/namra_project/mein_projects/story_box/android/app/.cxx/Debug/4y6v691v/x86/CMakeFiles/rebuild_cache.dir

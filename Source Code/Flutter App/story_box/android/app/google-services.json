@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "33305078627",
+    "project_id": "storybox-abc06",
+    "storage_bucket": "storybox-abc06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33305078627:android:2d92e3ed7a684f053a8156",
+        "android_client_info": {
+          "package_name": "com.incodes.storybox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33305078627-cl4pfctp79aup7f2vivn113ua5bf8gk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.incodes.storybox",
+            "certificate_hash": "97c198100bb27e82a1c25c009772058043f339f2"
+          }
+        },
+        {
+          "client_id": "33305078627-c1s6q8fm72ac638q1ghcp84ombctk7pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe91HJpTulY3HZNSudoRbrYlph3VY7104"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33305078627-c1s6q8fm72ac638q1ghcp84ombctk7pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "667d388ebc62ba3c37b1c371"
+  },
+  "name": "USD",
+  "symbol": "$",
+  "countryCode": "USA",
+  "currencyCode": "USD",
+  "isDefault": true,
+  "createdAt": {
+    "$date": "2024-06-27T10:01:50.935Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-27T11:40:34.899Z"
+  }
+}]
