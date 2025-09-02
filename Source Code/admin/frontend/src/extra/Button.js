@@ -12,6 +12,8 @@ export default function Button(props) {
     type,
   } = props;
 
+  const resolvedType = type || "button";
+
   return (
     <>
       <button
@@ -19,12 +21,12 @@ export default function Button(props) {
         onClick={onClick}
         style={style}
         disabled={disabled}
-        type={type}
+        type={resolvedType}
       >
         {btnIcon ? (
           <>
             {btnIcon}
-             {btnName}
+            {btnName}
           </>
         ) : (
           btnName

@@ -64,8 +64,9 @@ async function startServer() {
   });
 
   // Step 3: Start Server after all setup is done
-  app.listen(process?.env.PORT, () => {
-    console.log("Hello World ! listening on " + process.env.PORT);
+  const port = process?.env.PORT || 8000;
+  app.listen(port, () => {
+    console.log("Hello World ! listening on " + port);
   });
 }
 
@@ -114,4 +115,3 @@ cron.schedule("0 0 * * *", async () => {
     console.error("Error resetting episodeUnlockAds:", error);
   }
 });
-
