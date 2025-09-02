@@ -25,7 +25,6 @@ export const isLoading = createSelector(selectStates, (state) => {
   return loading;
 });
 
-
 // const getTokenData = (): string | null => localStorage.getItem("token");
 const getTokenData = () => {
   if (typeof localStorage !== "undefined") {
@@ -43,7 +42,7 @@ export const apiInstance = axios.create({
 });
 
 const cancelTokenSource = axios.CancelToken.source();
-const token= getTokenData();
+const token = getTokenData();
 
 axios.defaults.headers.common["Authorization"] = token ? `${token}` : "";
 axios.defaults.headers.common["key"] = secretKey;
@@ -123,42 +122,48 @@ const handleErrors = async (response) => {
   return response.json();
 };
 
-const getHeaders = ()=> ({
+const getHeaders = () => ({
   key: secretKey,
   Authorization: getTokenData() ? `${getTokenData()}` : "",
   "Content-Type": "application/json",
 });
 
+const joinUrl = (base, path) => {
+  const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+  const normalizedPath = path.startsWith("/") ? path.slice(1) : path;
+  return `${normalizedBase}${normalizedPath}`;
+};
+
 export const apiInstanceFetch = {
   baseURL,
   get: (url) =>
-    fetch(`${baseURL}${url}`, { method: "GET", headers: getHeaders() }).then(
+    fetch(joinUrl(baseURL, url), { method: "GET", headers: getHeaders() }).then(
       handleErrors
     ),
 
   post: (url, data) =>
-    fetch(`${baseURL}${url}`, {
+    fetch(joinUrl(baseURL, url), {
       method: "POST",
       headers: getHeaders(),
       body: JSON.stringify(data),
     }).then(handleErrors),
 
   patch: (url, data) =>
-    fetch(`${baseURL}${url}`, {
+    fetch(joinUrl(baseURL, url), {
       method: "PATCH",
       headers: getHeaders(),
       body: JSON.stringify(data),
     }).then(handleErrors),
 
   put: (url, data) =>
-    fetch(`${baseURL}${url}`, {
+    fetch(joinUrl(baseURL, url), {
       method: "PUT",
       headers: getHeaders(),
       body: JSON.stringify(data),
     }).then(handleErrors),
 
   delete: (url) =>
-    fetch(`${baseURL}${url}`, {
+    fetch(joinUrl(baseURL, url), {
       method: "DELETE",
       headers: getHeaders(),
     }).then(handleErrors),
