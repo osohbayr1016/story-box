@@ -155,40 +155,16 @@ class LoginPageController extends GetxController {
   }
 
   onGuestLogin() async {
-    try {
-      Get.dialog(const CustomProgressDialog());
-      loginUserModel = await LoginApi.callApi(
-        loginType: Utils.getLoginTypeValue(LoginType.QUICK),
-        email: Preference.identity,
-        identity: Preference.identity,
-        fcmToken: Preference.fcmToken,
-        name: "Guest",
-      );
-
-      if (loginUserModel != null) {
-        if (loginUserModel?.status == true) {
-          String loginUserJson = jsonEncode(loginUserModel?.user?.toJson());
-          await Preference.shared.setString(Preference.userData, loginUserJson);
-          await Preference.onSetUserID(loginUserModel?.user?.id ?? "");
-          await Preference.onIsLogin(true);
-          Get.offAllNamed(AppRoutes.bottomBarPage);
-          log("message UserID :: ${Preference.userId}");
-        } else {
-          Utils.showToast(Get.context!, loginUserModel?.message ?? "");
-        }
-      }
-      String? userDataJson = Preference.shared.getString(Preference.userData);
-      if (userDataJson != null) {
-        Map<String, dynamic> userMap = jsonDecode(userDataJson);
-        LoginUserModel loginUserModel = LoginUserModel.fromJson(userMap);
-        // Use the loginUserModel as needed
-        log("loginUserModel :: ${loginUserModel.toJson()}");
-      }
-    } finally {
-      if (Get.isDialogOpen ?? false) {
-        Get.back();
-      }
-    }
+    // Skip backend/database. Mark user as guest and go home.
+    await Preference.onSetUserID("guest");
+    await Preference.onIsLogin(true);
+    await Preference.shared.setString(Preference.userData, jsonEncode({
+      "id": "guest",
+      "name": "Guest",
+      "coin": 0,
+      "isVip": false,
+    }));
+    Get.offAllNamed(AppRoutes.bottomBarPage);
   }
 
   loginWithApple() async {
